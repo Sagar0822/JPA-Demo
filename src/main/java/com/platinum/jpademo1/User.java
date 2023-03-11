@@ -15,6 +15,10 @@ public class User {
     int age;
     String mobileNo;
 
+    public User(){
+
+    }
+
     public User(int admnNo, String name, int age, String mobileNo) {
         this.admnNo = admnNo;
         this.name = name;
