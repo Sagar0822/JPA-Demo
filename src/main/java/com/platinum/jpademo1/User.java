@@ -1,21 +1,24 @@
 package com.platinum.jpademo1;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="user_info")  //change table name
+@Table(name = "user")  //change table name
 public class User {
     @Id   //This is for primary key
-    @Column(name="id")
-    int admnNo;
+   @Column(name = "id")
+    int admnNo; 
+
     String name;
     int age;
     String mobileNo;
 
-    public User(){
+    public User() {
 
     }
 
